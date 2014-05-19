@@ -17,7 +17,7 @@
  under the License.
  */
 //
-// Prefix header for all source files of the 'storyBits' target in the 'storyBits' project
+// Prefix header for all source files of the 'StoryBits' target in the 'StoryBits' project
 //
 
 #ifdef __OBJC__

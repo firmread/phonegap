@@ -36,7 +36,7 @@
 
 
                 <button onclick="capturePhotoWithData();">Capture Photo With Image Data</button> <br>
-                <button onclick="capturePhotoWithFile();">Capture Photo With Image File URI</button> <br>
+                <button onclick="soundRecording();">Record Sound</button> <br>
                 <button onclick="getPhoto(pictureSource.PHOTOLIBRARY);">From Photo Library</button><br>
                 <button onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);">From Photo Album</button><br>
                 <img style="display:none;width:60px;height:60px;" id="smallImage" src="" />
@@ -150,6 +150,24 @@
             //
             function onFail(message) {
               alert('Failed because: ' + message);
+            }
+
+            function soundRecording(){
+                var captureSuccess = function(mediaFiles) {
+                    var i, path, len;
+                    for (i = 0, len = mediaFiles.length; i < len; i += 1) {
+                        path = mediaFiles[i].fullPath;
+                        // do something interesting with the file
+                    }
+                };
+
+                // capture error callback
+                var captureError = function(error) {
+                    navigator.notification.alert('Error code: ' + error.code, null, 'Capture Error');
+                };
+
+                // start audio capture
+                navigator.device.capture.captureAudio(captureSuccess, captureError, {limit:2});
             }
 
         </script>

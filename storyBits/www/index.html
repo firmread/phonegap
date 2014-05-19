@@ -1,43 +1,270 @@
 <!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
+<!-- saved from url=(0039)http://storybits.org/index.php/version/ -->
+<html lang="en"><script id="tinyhippos-injected">if (window.top.ripple) { window.top.ripple("bootstrap").inject(window, document); }</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1.0; user-scalable=no;">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+    <title>StoryBits</title>
 
-    http://www.apache.org/licenses/LICENSE-2.0
+    <!-- Bootstrap -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/bootstrap-theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/jquery-ui.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  	<div class="container">
+  		<div id="screen-1" class="mobile-screen" style="display: none;">
+  			<div style="margin-bottom: 100px;margin-top: 50px">
+  				<h1>STORYBITS</h1>
+  			</div>
+  			<form class="form-inline" role="form">
+			  <div class="form-group">
+			    <label for="projectCode">Entrer Your Project Code</label>
+			    <input type="text" class="form-control" id="projectCode" placeholder="project code here">
+			  </div>
+			  <button type="submit" class="btn btn-default" id="screen-1-submit">Enter</button>
+  			</form>
+  		</div>
+  		<div id="screen-2" class="mobile-screen row" style="display: block;">
+  			<div class="container">
+  				<h1>Dinosaur Extinction</h1>
+  				<p>Create a story that explains how the dinosaurs went extinct.</p>
+  			</div>
+  			<table class="table table-striped">
+				<tbody>
+					<tr>
+						<td>Setting:<p><span class="glyphicon glyphicon-star" style="color: #2d6ca2;"></span><span class="glyphicon glyphicon-star" style="color: #419641;"></span><span class="glyphicon glyphicon-star" style="color: #eb9316;"></span></p></td>
+						<td>Describe the environment in which your story takes place.</td>
+						<td><button type="button" class="btn btn-default" id="setting-go"><span class="glyphicon glyphicon-chevron-right"></span></button></td>
+					</tr>
+					<tr>
+						<td>Characters:<p><span class="glyphicon glyphicon-star" style="color: #2d6ca2;"></span><span class="glyphicon glyphicon-star" style="color: #419641;"></span><span class="glyphicon glyphicon-star" style="color: #2aabd2;"></span></p></td>
+						<td>Introduce 2 characters who will be a part of your story.</td>
+						<td><button type="button" class="btn btn-default" id="characters-go"><span class="glyphicon glyphicon-chevron-right"></span></button></td>
+					</tr>
+					<tr>
+						<td>Rising Action:<p><span class="glyphicon glyphicon-star" style="color: #419641;"></span></p></td>
+						<td>Describe the events at that time period through the eyes of your characters.</td>
+						<td><button type="button" class="btn btn-default" id="rising-action-go"><span class="glyphicon glyphicon-chevron-right"></span></button></td>
+					</tr>
+					<tr>
+						<td>Climax:<p></p></td>
+						<td>The main event in your story. Choose one of the theories we discussed and present it here.</td>
+						<td><button type="button" class="btn btn-default" id="climax-go"><span class="glyphicon glyphicon-chevron-right"></span></button></td>
+					</tr>
+					<tr>
+						<td>Falling Action:<p><span class="glyphicon glyphicon-star" style="color: #2d6ca2;"></span><span class="glyphicon glyphicon-star" style="color: #2aabd2;"></span></p></td>
+						<td>What is the final outcome of the story.</td>
+						<td><button type="button" class="btn btn-default" id="falling-action-go"><span class="glyphicon glyphicon-chevron-right"></span></button></td>
+					</tr>
+				</tbody>
+  			</table>
+  			<button type="submit" class="btn btn-default center-block" id="main-submit">Upload project</button>
+  		</div>
+  		<div id="screen-3" class="mobile-screen" style="padding-left: 40px; display: none;">
+  			<button type="button" class="btn btn-default back-button back-to-screen2"><p class="back-text">Setting</p></button>
+  			<div>
+  				<h3>Collect each of these bits:</h3>
+  			</div>
+  			<div id="audio-button" class="capture-section">
+  				<button type="button" class="btn btn-primary" id="capture-audio">AUDIO</button>
+   			</div>
+  			<div id="video-button" class="capture-section">
+  				<button type="button" class="btn btn-success" id="capture-video">VIDEO</button>
+  			</div>
+  			<div id="photos-button" class="capture-section">
+  				<button type="button" class="btn btn-info" id="capture-photos">PHOTOS</button>
+  			</div>
+  			<div id="text-button" class="capture-section">
+  				<button type="button" class="btn btn-warning" id="capture-text">TEXT</button>
+  			</div>
+  		</div>
+  		<div id="screen-4" class="mobile-screen" style="padding-left: 40px; display: none;">
+  			<button type="button" class="btn btn-default back-button back-to-screen3"><p class="back-text">Setting</p></button>
+  			<div>
+  				<h3>CAPTURE AUDIO CLIPS</h3>
+  				<p>Use these tools to build your story.</p>
+  			</div>
+  			<div class="media-display">
+  				<img src="./img/stock-footage-audio-waveform-loop.jpg">
+  			</div>
+  			<div class="control-buttons">
+  				<p><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-record"></span></button>&nbsp;<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-play"></span></button></p>
+  			</div>
+   			<div class="tag-area">
+  			</div>
+  		</div>
+  		<div id="screen-5" class="mobile-screen" style="padding-left: 40px; display: none;">
+  			<button type="button" class="btn btn-default back-button back-to-screen3"><p class="back-text">Setting</p></button>
+  			<div>
+  				<h3>CAPTURE VIDEO CLIPS</h3>
+  				<p>Use these tools to build your story.</p>
+  			</div>
+  			<div class="media-display">
+  				<img src="./img/recording_preview_590x300.jpg">
+  			</div>
+  			<div class="control-buttons">
+  				<p><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-record"></span></button>&nbsp;<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-play"></span></button></p>
+  			</div>
+  		</div>
+  		<div id="screen-6" class="mobile-screen" style="padding-left: 40px; display: none;">
+  			<button type="button" class="btn btn-default back-button back-to-screen3"><p class="back-text">Setting</p></button>
+  			<div>
+  				<h3>CAPTURE IMAGES</h3>
+  				<p>Use these tools to build your story.</p>
+  			</div>
+  			<div class="media-display">
+  				<img src="./img/dinosaurs-at-museum-of-natural-history-new-york.jpg">
+  			</div>
+  			<div class="control-buttons">
+  				<p><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-record"></span></button>&nbsp;<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-play"></span></button></p>
+  			</div>
+   		</div>
+  		<div id="screen-7" class="mobile-screen" style="padding-left: 40px; display: none;">
+  			<button type="button" class="btn btn-default back-button back-to-screen3"><p class="back-text">Setting</p></button>
+  			<div>
+  				<h3>WRITE SOME TEXT</h3>
+  				<p>Use these tools to build your story.</p>
+  			</div>
+  			<form role="form" style="margin-bottom: 20px;">
+	  			<div class="form-group">
+		  			<textarea class="form-control" rows="3"></textarea>
+	  			</div>
+	  			<button class="btn btn-default">Submit</button>
+	  		</form>
+	  		<div class="keyboard">
+	  			<img src="./img/css_wide_keyboard.png">
+	  		</div>
+  		</div>
+  		<div id="screen-8" class="mobile-screen">
+  			<h1>Your project has been uploaded</h1>
+  			<h3>Edit your projects @<br> storybits.org/edit</h3>
+  			<h3>Your access word is '<span class="text-danger">banana</span>'</h3>
+  		</div>
+  	</div>
 
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>StoryBits</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
-    </body>
-</html>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./js/bootstrap.min.js"></script>
+    <script>
+    	var screen2sect;
+    	$(document).ready(function(){
+	    	$('#screen-1-submit').click(function(e){
+	    		e.preventDefault();
+		    	$('#screen-1').fadeOut(600, function(){
+			    	$('#screen-2').fadeIn(600);
+		    	});
+	    	});
+	    	
+	    	$('#setting-go').click(function(e){
+	    		e.preventDefault();
+	    		console.log(e);
+	    		$('#screen-2').hide("slide", { direction: "left"}, 600, function(){
+		    		$('#screen-3').show("slide", { direction: "rigth"}, 600);
+		    		screen2sect = 'Setting'
+		    		$('.back-button').html('<p class="back-text">'+screen2sect+'</p>');
+	    		});
+	    		
+	    	});
+	    	$('#characters-go').click(function(e){
+	    		e.preventDefault();
+	    		$('#screen-2').hide("slide", { direction: "left"}, 600, function(){
+		    		$('#screen-3').show("slide", { direction: "rigth"}, 600);
+		    		screen2sect = 'Characters'
+		    		$('.back-button').html('<p class="back-text">'+screen2sect+'</p>');
+	    		});
+	    	});
+	    	$('#rising-action-go').click(function(e){
+	    		e.preventDefault();
+	    		$('#screen-2').hide("slide", { direction: "left"}, 600, function(){
+		    		$('#screen-3').show("slide", { direction: "rigth"}, 600);
+		    		screen2sect = 'Rising Action'
+		    		$('.back-button').html('<p class="back-text">'+screen2sect+'</p>');
+	    		});
+	    	});
+	    	$('#climax-go').click(function(e){
+	    		e.preventDefault();
+	    		$('#screen-2').hide("slide", { direction: "left"}, 600, function(){
+		    		$('#screen-3').show("slide", { direction: "rigth"}, 600);
+		    		screen2sect = 'Climax'
+		    		$('.back-button').html('<p class="back-text">'+screen2sect+'</p>');
+	    		});
+	    	});
+	    	$('#falling-action-go').click(function(e){
+	    		e.preventDefault();
+	    		$('#screen-2').hide("slide", { direction: "left"}, 600, function(){
+		    		$('#screen-3').show("slide", { direction: "rigth"}, 600);
+		    		screen2sect = 'Falling Action'
+		    		$('.back-button').html('<p class="back-text">'+screen2sect+'</p>');
+	    		});
+	    	});
+
+	    	$('#capture-audio').click(function(e){
+		    	e.preventDefault();
+		    	$('#screen-3').hide("slide", { direction: "left"}, 600, function(){
+		    		$('#screen-4').show("slide", { direction: "rigth"}, 600);
+		    		$('.back-button').html('<p class="back-text">AUDIO</p>');
+	    		});
+	    	});
+	    	$('#capture-video').click(function(e){
+		    	e.preventDefault();
+		    	$('#screen-3').hide("slide", { direction: "left"}, 600, function(){
+		    		$('#screen-5').show("slide", { direction: "rigth"}, 600);
+		    		$('.back-button').html('<p class="back-text">VIDEO</p>');
+	    		});
+	    	});
+	    	$('#capture-photos').click(function(e){
+		    	e.preventDefault();
+		    	$('#screen-3').hide("slide", { direction: "left"}, 600, function(){
+		    		$('#screen-6').show("slide", { direction: "rigth"}, 600);
+		    		$('.back-button').html('<p class="back-text">PHOTO</p>');
+	    		});
+	    	});
+	    	$('#capture-text').click(function(e){
+		    	e.preventDefault();
+		    	$('#screen-3').hide("slide", { direction: "left"}, 600, function(){
+		    		$('#screen-7').show("slide", { direction: "rigth"}, 600);
+		    		$('.back-button').html('<p class="back-text">TEXT</p>');
+	    		});
+	    	});
+	    	
+	    	$('#main-submit').click(function(e){
+		    	e.preventDefault();
+		    	$('#screen-2').hide("slide", { direction: "left"}, 600, function(){
+		    		$('#screen-8').show("slide", { direction: "rigth"}, 600);
+	    		});
+	    	});
+	    	
+	    	$('.back-to-screen3').click(function(e){
+	    		e.preventDefault();
+	    		var elem = $(this).parent();
+	    		$(elem).hide("slide", {direction: "right"}, 600, function(){
+	    			$('.back-button').html('<p class="back-text">'+screen2sect+'</p>');
+		    		$('#screen-3').show("slide", {direction: "left"}, 600);
+	    		})
+		    	
+	    	});
+	    	$('.back-to-screen2').click(function(e){
+	    		e.preventDefault();
+	    		var elem = $(this).parent();
+	    		$(elem).hide("slide", {direction: "right"}, 600, function(){
+	    			screen2sect = '';
+		    		$('#screen-2').show("slide", {direction: "left"}, 600);
+	    		})
+		    	
+	    	});
+    	});
+    	
+    </script>
+    
+  
+</body></html>
