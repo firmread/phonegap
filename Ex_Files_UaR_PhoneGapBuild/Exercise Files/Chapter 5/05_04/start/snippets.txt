@@ -1,0 +1,131 @@
+Step 1:
+<?xml version="1.0" encoding="UTF-8"?>
+
+Step 2:
+<widget xmlns = "http://www.w3.org/ns/widgets"
+	xmlns:gap = "http://phonegap.com/ns/1.0"
+	id        = "com.ajsoftware.lynda.samoca"
+	versionCode="1"
+	version   = "1.0">
+	
+Step 3:
+<name>SAMOCA</name>
+
+Step 4:
+<description>
+A sample app for Up and Running with PhoneGap Build		</description>
+
+Step 5:
+<author href="samoca.org" 
+email="support@samoca.org">
+Chris Griffith
+</author>
+
+Step 6:
+<gap:platform name="ios" />
+<gap:platform name="android" />
+<gap:platform name="winphone" />
+
+Step 7:
+<preference name="phonegap-version" value="3.3.0" />
+
+Step 8:
+<preference name="orientation" value="portrait" />
+
+Step 9:
+<preference name="fullscreen" value="false" />
+
+Step 10:
+<preference name="webviewbounce" value="false" />
+<preference name="DisallowOverscroll" value="true"/>
+<preference name="disallowOverscroll" value="true" />
+
+Step 11:
+<preference name="exit-on-suspend" value="false" />
+
+Step 12:
+<preference name="prerendered-icon" value="false" />
+
+Step 13:
+<preference name="android-minSdkVersion" value="14" />
+
+Step 14:
+<preference name="android-installLocation" value="auto" />
+
+Step 15:
+<preference name="BackgroundColor" value="0xffffffff "/>
+
+Step 16:
+<preference name="KeepRunning" value="true"/>
+
+Step 17:
+<icon src="res/icon/ios/icon-57.png" gap:platform="ios" width="57" height="57" />
+<icon src="res/icon/ios/icon-72.png" gap:platform="ios" width="72" height="72" />
+<icon src="res/icon/ios/icon-57-2x.png" gap:platform="ios" width="114" height="114" />
+<icon src="res/icon/ios/icon-72-2x.png" gap:platform="ios" width="144" height="144" />
+<icon src="res/icon/ios/icon-76.png" gap:platform="ios" width="76" height="76" />
+<icon src="res/icon/ios/icon-120.png" gap:platform="ios" width="120" height="120" />
+<icon src="res/icon/ios/icon-152.png" gap:platform="ios" width="152" height="152" />
+
+Step 18:
+<icon src="res/icon/android/icon-36-ldpi.png" gap:platform="android" gap:density="ldpi" />
+<icon src="res/icon/android/icon-48-mdpi.png" gap:platform="android" gap:density="mdpi" />
+<icon src="res/icon/android/icon-72-hdpi.png" gap:platform="android" gap:density="hdpi" />
+<icon src="res/icon/android/icon-96-xhdpi.png" gap:platform="android" gap:density="xhdpi" />
+<icon src="res/icon/android/icon-144-xxhdpi.png" gap:platform="android" gap:density="xxhdpi" />
+
+Step 19:
+<gap:splash src="res/screen/ios/screen-iphone-portrait.png" gap:platform="ios" width="320" height="480" />
+<gap:splash src="res/screen/ios/screen-iphone-landscape.png" gap:platform="ios" width="480" height="320" />
+<gap:splash src="res/screen/ios/screen-iphone-portrait-2x.png" gap:platform="ios" width="640" height="960" />
+<gap:splash src="res/screen/ios/screen-iphone-landscape-2x.png" gap:platform="ios" width="960" height="640" />
+<gap:splash src="res/screen/ios/screen-iphone-portrait-568h-2x.png" gap:platform="ios" width="640" height="1136" />
+<gap:splash src="res/screen/ios/screen-ipad-portrait.png" gap:platform="ios" width="768" height="1024 " />
+<gap:splash src="res/screen/ios/screen-ipad-landscape.png" gap:platform="ios" width="1024" height="768" />
+<gap:splash src="res/screen/ios/screen-ipad-portrait-2x.png" gap:platform="ios" width="1536" height="2008" />
+<gap:splash src="res/screen/ios/screen-ipad-landscape-2x.png" gap:platform="ios" width="2048" height="1496" />
+
+Step 20:
+<gap:splash src="res/screen/android/screen-ldpi-portrait.png" gap:platform="android" gap:density="ldpi" />
+<gap:splash src="res/screen/android/screen-mdpi-portrait.png" gap:platform="android" gap:density="mdpi" />
+<gap:splash src="res/screen/android/screen-hdpi-portrait.png" gap:platform="android" gap:density="hdpi" />
+<gap:splash src="res/screen/android/screen-xhdpi-portrait.png" gap:platform="android" gap:density="xhdpi" />
+<gap:splash src="res/icon/android/icon-144-xxhdpi.png" gap:platform="android" gap:density="xxhdpi" />
+
+Step 21:
+<feature name="http://api.phonegap.com/1.0/camera"/>
+<feature name="http://api.phonegap.com/1.0/file"/>
+<feature name="http://api.phonegap.com/1.0/geolocation"/>
+<feature name="http://api.phonegap.com/1.0/network"/>
+
+Step 22:
+<gap:plugin name="org.apache.cordova.camera"  />
+<gap:plugin name="org.apache.cordova.geolocation"  />
+<gap:plugin name="org.apache.cordova.dialogs"  />
+<gap:plugin name="org.apache.cordova.device"  />
+<gap:plugin name="org.apache.cordova.network-information"  />
+<gap:plugin name="org.apache.cordova.console"  />
+<gap:plugin name="org.apache.cordova.inappbrowser"  />
+<gap:plugin name="org.apache.cordova.network-information"  />
+<gap:plugin name="org.apache.cordova.splashscreen"  />
+
+Step 23:
+<gap:plugin name="com.phonegap.plugins.barcodescanner" />
+
+Step 24:
+<access origin="*" subdomains="true" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

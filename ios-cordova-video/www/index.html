@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title></title>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+	<meta charset="utf-8">
+
+
+	<!-- iPad/iPhone specific css below, add after your main css >
+	<link rel="stylesheet" media="only screen and (max-device-width: 1024px)" href="ipad.css" type="text/css" />		
+	<link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="iphone.css" type="text/css" />		
+	-->
+	<!-- If your application is targeting iOS BEFORE 4.0 you MUST put json2.js from http://www.JSON.org/json2.js into your www directory and include it here -->
+        <link rel="stylesheet" href="css/jquery.mobile-1.0.1.min.css"/>
+        
+        <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="jquery.mobile-1.0.1.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="cordova-1.7.0.js"></script>
+    <script type="text/javascript">
+
+
+	// If you want to prevent dragging, uncomment this section
+	/*
+	function preventBehavior(e) 
+	{ 
+      e.preventDefault(); 
+    };
+	document.addEventListener("touchmove", preventBehavior, false);
+	*/
+	
+	/* If you are supporting your own protocol, the var invokeString will contain any arguments to the app launch.
+	see http://iphonedevelopertips.com/cocoa/launching-your-own-application-via-a-custom-url-scheme.html
+	for more details -jm */
+	/*
+	function handleOpenURL(url)
+	{
+		// TODO: do something with the url passed in.
+	}
+	*/
+	
+	function onBodyLoad()
+	{		
+		document.addEventListener("deviceready", onDeviceReady, false);
+	}
+	
+	/* When this function is called, Cordova has been initialized and is ready to roll */
+	/* If you are supporting your own protocol, the var invokeString will contain any arguments to the app launch.
+	see http://iphonedevelopertips.com/cocoa/launching-your-own-application-via-a-custom-url-scheme.html
+	for more details -jm */
+	function onDeviceReady()
+	{
+		// do your thing!
+		navigator.notification.alert("Cordova is working")
+	}
+    
+    </script>
+  </head>
+  <body onload="">
+      <div data-role="page" id="page1">
+          <div data-role="header">
+              <h3>Vimeo Test</h3>
+              </div>
+          <div data-role="content">
+              
+              <a href="http://www.google.com" rel="external">Google</a>
+              <a href="http://www.apple.com" rel="external">Apple</a>
+              <a href="http://www.google.com/maps?q=4150+Chambers+Hill+Road+Harrisburg,+PA+17111&hl=en&sll=37.0625,-95.677068&sspn=58.033539,113.730469&vpsrc=0&hnear=4150+Chambers+Hill+Rd,+Harrisburg,+Pennsylvania+17111&t=h&z=17" rel="external">Google Maps</a>
+              
+              <iframe src="http://player.vimeo.com/video/36579366?byline=0" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/36579366">Bret Victor - Inventing on Principle</a> from <a href="http://vimeo.com/cusec">CUSEC</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+              
+              <a href="index1.html">Goto Next</a>
+          </div>
+      </div>
+  </body>
+</html>

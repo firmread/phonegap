@@ -1,0 +1,25 @@
+/Users/firmread/Sync/code/phonegap/storyBits/platforms/android/ant-build/storyBits.ap_ \
+ : /Users/firmread/Sync/code/phonegap/storyBits/platforms/android/res/drawable/icon.png \
+/Users/firmread/Sync/code/phonegap/storyBits/platforms/android/res/drawable-hdpi/icon.png \
+/Users/firmread/Sync/code/phonegap/storyBits/platforms/android/res/drawable-ldpi/icon.png \
+/Users/firmread/Sync/code/phonegap/storyBits/platforms/android/res/drawable-mdpi/icon.png \
+/Users/firmread/Sync/code/phonegap/storyBits/platforms/android/res/drawable-xhdpi/icon.png \
+/Users/firmread/Sync/code/phonegap/storyBits/platforms/android/res/values/strings.xml \
+/Users/firmread/Sync/code/phonegap/storyBits/platforms/android/res/xml/config.xml \
+/Users/firmread/Sync/code/phonegap/storyBits/platforms/android/ant-build/res/drawable/icon.png \
+/Users/firmread/Sync/code/phonegap/storyBits/platforms/android/ant-build/res/drawable-hdpi/icon.png \
+/Users/firmread/Sync/code/phonegap/storyBits/platforms/android/ant-build/res/drawable-ldpi/icon.png \
+/Users/firmread/Sync/code/phonegap/storyBits/platforms/android/ant-build/res/drawable-mdpi/icon.png \
+/Users/firmread/Sync/code/phonegap/storyBits/platforms/android/ant-build/res/drawable-xhdpi/icon.png \
+/Users/firmread/Sync/code/phonegap/storyBits/platforms/android/assets/_where-is-www.txt \
+/Users/firmread/Sync/code/phonegap/storyBits/platforms/android/assets/www \
+/Users/firmread/Sync/code/phonegap/storyBits/platforms/android/assets/www/cordova.js \
+/Users/firmread/Sync/code/phonegap/storyBits/platforms/android/assets/www/cordova_plugins.js \
+/Users/firmread/Sync/code/phonegap/storyBits/platforms/android/assets/www/css \
+/Users/firmread/Sync/code/phonegap/storyBits/platforms/android/assets/www/img \
+/Users/firmread/Sync/code/phonegap/storyBits/platforms/android/assets/www/index.html \
+/Users/firmread/Sync/code/phonegap/storyBits/platforms/android/assets/www/js \
+/Users/firmread/Sync/code/phonegap/storyBits/platforms/android/assets/www/css/index.css \
+/Users/firmread/Sync/code/phonegap/storyBits/platforms/android/assets/www/img/logo.png \
+/Users/firmread/Sync/code/phonegap/storyBits/platforms/android/assets/www/js/index.js \
+/Users/firmread/Sync/code/phonegap/storyBits/platforms/android/ant-build/AndroidManifest.xml \

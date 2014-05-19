@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+	xmlns:gap = "http://phonegap.com/ns/1.0"
+	id        = "com.ajsoftware.lynda.samoca"
+	versionCode="1"
+	version   = "1.0">
+    <name>SAMOCA</name>
+    <description>
+A sample app for Up and Running with PhoneGap Build		</description>
+	<author href="chrisgriffith.wordpress.com" email="chris.griffith@gmail.com">
+Chris Griffith
+</author>    
+    
+	<gap:platform name="ios" />
+	<gap:platform name="android" />
+	<gap:platform name="winphone" />
+    
+	<preference name="phonegap-version" value="3.3.0" />
+	<preference name="orientation" value="portrait" />
+	<preference name="fullscreen" value="false" />
+	<preference name="webviewbounce" value="false" />
+	<preference name="DisallowOverscroll" value="true"/>
+	<preference name="disallowOverscroll" value="true" />
+	<preference name="exit-on-suspend" value="false" />
+	<preference name="prerendered-icon" value="false" />
+	
+</widget>
