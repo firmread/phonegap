@@ -20,19 +20,20 @@
   </head>
   <body>
   	<div class="container">
-  		<div id="screen-1" class="mobile-screen" style="display: none;">
+  		<div id="screen-1" class="mobile-screen" style="display: block;">
   			<div style="margin-bottom: 100px;margin-top: 50px">
   				<h1>STORYBITS</h1>
   			</div>
   			<form class="form-inline" role="form">
 			  <div class="form-group">
-			    <label for="projectCode">Entrer Your Project Code</label>
+			    <label for="projectCode">Enter Your Project Code</label>
 			    <input type="text" class="form-control" id="projectCode" placeholder="project code here">
 			  </div>
 			  <button type="submit" class="btn btn-default" id="screen-1-submit">Enter</button>
   			</form>
   		</div>
-  		<div id="screen-2" class="mobile-screen row" style="display: block;">
+  		<div id="screen-2" class="mobile-screen row" style="display: none;">
+  			<button type="button" class="btn btn-default info"><span class="glyphicon glyphicon-info-sign" style="color: rgb(31, 104, 214)"></span></button>
   			<div class="container">
   				<h1>Dinosaur Extinction</h1>
   				<p>Create a story that explains how the dinosaurs went extinct.</p>
@@ -40,35 +41,36 @@
   			<table class="table table-striped">
 				<tbody>
 					<tr>
-						<td>Setting:<p><span class="glyphicon glyphicon-star" style="color: #2d6ca2;"></span><span class="glyphicon glyphicon-star" style="color: #419641;"></span><span class="glyphicon glyphicon-star" style="color: #eb9316;"></span></p></td>
+						<td>Setting:<p><span class="glyphicon media-icon glyphicon-volume-up" style="color: #419641;"></span><span class="glyphicon media-icon glyphicon-facetime-video" style="color: #419641;"></span><span class="glyphicon media-icon glyphicon-camera" style="color: #419641;"></span><span class="glyphicon media-icon glyphicon-comment" style="color: #333333;"></span></p></td>
 						<td>Describe the environment in which your story takes place.</td>
 						<td><button type="button" class="btn btn-default" id="setting-go"><span class="glyphicon glyphicon-chevron-right"></span></button></td>
 					</tr>
 					<tr>
-						<td>Characters:<p><span class="glyphicon glyphicon-star" style="color: #2d6ca2;"></span><span class="glyphicon glyphicon-star" style="color: #419641;"></span><span class="glyphicon glyphicon-star" style="color: #2aabd2;"></span></p></td>
+						<td>Characters:<p><span class="glyphicon media-icon glyphicon-volume-up" style="color: #333333;"></span><span class="glyphicon media-icon glyphicon-facetime-video" style="color: #419641;"></span><span class="glyphicon media-icon glyphicon-camera" style="color: #419641;"></span><span class="glyphicon media-icon glyphicon-comment" style="color: #333333;"></span></p></td>
 						<td>Introduce 2 characters who will be a part of your story.</td>
 						<td><button type="button" class="btn btn-default" id="characters-go"><span class="glyphicon glyphicon-chevron-right"></span></button></td>
 					</tr>
 					<tr>
-						<td>Rising Action:<p><span class="glyphicon glyphicon-star" style="color: #419641;"></span></p></td>
+						<td>Rising Action:<p><span class="glyphicon media-icon glyphicon-volume-up" style="color: #333333;"></span><span class="glyphicon media-icon glyphicon-facetime-video" style="color: #419641;"></span><span class="glyphicon media-icon glyphicon-camera" style="color: #419641;"></span><span class="glyphicon media-icon glyphicon-comment" style="color: #333333;"></span></p></td>
 						<td>Describe the events at that time period through the eyes of your characters.</td>
 						<td><button type="button" class="btn btn-default" id="rising-action-go"><span class="glyphicon glyphicon-chevron-right"></span></button></td>
 					</tr>
 					<tr>
-						<td>Climax:<p></p></td>
+						<td>Climax:<p><span class="glyphicon media-icon glyphicon-volume-up" style="color: #419641;"></span><span class="glyphicon media-icon glyphicon-facetime-video" style="color: #333333;"></span><span class="glyphicon media-icon glyphicon-camera" style="color: #419641;"></span><span class="glyphicon media-icon glyphicon-comment" style="color: #333333;"></span></p></td>
 						<td>The main event in your story. Choose one of the theories we discussed and present it here.</td>
 						<td><button type="button" class="btn btn-default" id="climax-go"><span class="glyphicon glyphicon-chevron-right"></span></button></td>
 					</tr>
 					<tr>
-						<td>Falling Action:<p><span class="glyphicon glyphicon-star" style="color: #2d6ca2;"></span><span class="glyphicon glyphicon-star" style="color: #2aabd2;"></span></p></td>
+						<td>Falling Action:<p><span class="glyphicon media-icon glyphicon-volume-up" style="color: #333333;"></span><span class="glyphicon media-icon glyphicon-facetime-video" style="color: #419641;"></span><span class="glyphicon media-icon glyphicon-camera" style="color: #333333;"></span><span class="glyphicon media-icon glyphicon-comment" style="color: #333333;"></span></p></td>
 						<td>What is the final outcome of the story.</td>
 						<td><button type="button" class="btn btn-default" id="falling-action-go"><span class="glyphicon glyphicon-chevron-right"></span></button></td>
 					</tr>
 				</tbody>
   			</table>
-  			<button type="submit" class="btn btn-default center-block" id="main-submit">Upload project</button>
+  			<button type="submit" class="btn btn-default center-block" id="main-submit">Upload for Editing</button>
   		</div>
-  		<div id="screen-3" class="mobile-screen" style="padding-left: 40px; display: none;">
+  		<div id="screen-3" class="mobile-screen" style="padding-left: 40px; margin-top: 98px; display: none;">
+  			<button type="button" class="btn btn-default info" data-toggle="modal" data-target="#infoHelp"><span class="glyphicon glyphicon-info-sign" style="color: rgb(31, 104, 214)"></span></button>
   			<button type="button" class="btn btn-default back-button back-to-screen2"><p class="back-text">Setting</p></button>
   			<div>
   				<h3>Collect each of these bits:</h3>
@@ -86,7 +88,8 @@
   				<button type="button" class="btn btn-warning" id="capture-text">TEXT</button>
   			</div>
   		</div>
-  		<div id="screen-4" class="mobile-screen" style="padding-left: 40px; display: none;">
+  		<div id="screen-4" class="mobile-screen" style="padding-left: 40px; margin-top: 98px; display: none;">
+  			<button type="button" class="btn btn-default info" data-toggle="modal" data-target="#infoHelp"><span class="glyphicon glyphicon-info-sign" style="color: rgb(31, 104, 214)"></span></button>
   			<button type="button" class="btn btn-default back-button back-to-screen3"><p class="back-text">Setting</p></button>
   			<div>
   				<h3>CAPTURE AUDIO CLIPS</h3>
@@ -96,12 +99,13 @@
   				<img src="./img/stock-footage-audio-waveform-loop.jpg">
   			</div>
   			<div class="control-buttons">
-  				<p><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-record"></span></button>&nbsp;<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-play"></span></button></p>
+  				<p><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-record" style="color: red"></span></button>&nbsp;<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-play"></span></button></p>
   			</div>
    			<div class="tag-area">
   			</div>
   		</div>
-  		<div id="screen-5" class="mobile-screen" style="padding-left: 40px; display: none;">
+  		<div id="screen-5" class="mobile-screen" style="padding-left: 40px; margin-top: 98px;">
+  			<button type="button" class="btn btn-default info" data-toggle="modal" data-target="#infoHelp"><span class="glyphicon glyphicon-info-sign" style="color: rgb(31, 104, 214)"></span></button>
   			<button type="button" class="btn btn-default back-button back-to-screen3"><p class="back-text">Setting</p></button>
   			<div>
   				<h3>CAPTURE VIDEO CLIPS</h3>
@@ -111,10 +115,11 @@
   				<img src="./img/recording_preview_590x300.jpg">
   			</div>
   			<div class="control-buttons">
-  				<p><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-record"></span></button>&nbsp;<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-play"></span></button></p>
+  				<p><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-record" style="color: red"></span></button>&nbsp;<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-play"></span></button></p>
   			</div>
   		</div>
-  		<div id="screen-6" class="mobile-screen" style="padding-left: 40px; display: none;">
+  		<div id="screen-6" class="mobile-screen" style="padding-left: 40px; margin-top: 98px;">
+  			<button type="button" class="btn btn-default info" data-toggle="modal" data-target="#infoHelp"><span class="glyphicon glyphicon-info-sign" style="color: rgb(31, 104, 214)"></span></button>
   			<button type="button" class="btn btn-default back-button back-to-screen3"><p class="back-text">Setting</p></button>
   			<div>
   				<h3>CAPTURE IMAGES</h3>
@@ -124,10 +129,11 @@
   				<img src="./img/dinosaurs-at-museum-of-natural-history-new-york.jpg">
   			</div>
   			<div class="control-buttons">
-  				<p><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-record"></span></button>&nbsp;<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-play"></span></button></p>
+  				<p><button type="button" class="btn btn-default"><span class="glyphicon glyphicon glyphicon-unchecked" style="color: red"></span></button>&nbsp;<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-play"></span></button></p>
   			</div>
    		</div>
-  		<div id="screen-7" class="mobile-screen" style="padding-left: 40px; display: none;">
+  		<div id="screen-7" class="mobile-screen" style="padding-left: 40px; margin-top: 98px;">
+  			<button type="button" class="btn btn-default info" data-toggle="modal" data-target="#infoHelp"><span class="glyphicon glyphicon-info-sign" style="color: rgb(31, 104, 214)"></span></button>
   			<button type="button" class="btn btn-default back-button back-to-screen3"><p class="back-text">Setting</p></button>
   			<div>
   				<h3>WRITE SOME TEXT</h3>
@@ -147,6 +153,12 @@
   			<h1>Your project has been uploaded</h1>
   			<h3>Edit your projects @<br> storybits.org/edit</h3>
   			<h3>Your access word is '<span class="text-danger">banana</span>'</h3>
+  		</div>
+  		
+  		<div class="info-popup" style="display: none;">
+  			<button type="button" class="close-popup">×</button> 			
+	       <h4>Information and Help</h4>
+	       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   		</div>
   	</div>
 
@@ -261,6 +273,15 @@
 		    		$('#screen-2').show("slide", {direction: "left"}, 600);
 	    		})
 		    	
+	    	});
+	    	
+	    	$('.info').click(function(e){
+		    	e.preventDefault();
+		    	$('.info-popup').show();
+	    	});
+	    	$('.close-popup').click(function(e){
+		    	e.preventDefault();
+		    	$('.info-popup').hide();
 	    	});
     	});
     	
